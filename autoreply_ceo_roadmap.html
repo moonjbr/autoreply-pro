@@ -1,0 +1,136 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.roadmap{padding:8px 0;display:flex;flex-direction:column;gap:0}
+.header{margin-bottom:24px}
+.header h1{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.header p{font-size:14px;color:var(--color-text-secondary);line-height:1.6}
+.phase{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);background:var(--color-background-primary);margin-bottom:10px;overflow:hidden}
+.phase-header{padding:14px 18px;display:flex;align-items:center;gap:12px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.phase-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;flex-shrink:0}
+.phase-meta{flex:1}
+.phase-title{font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.phase-sub{font-size:12px;color:var(--color-text-secondary);margin-top:1px}
+.phase-badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.tasks{padding:12px 18px;display:flex;flex-direction:column;gap:8px}
+.task{display:flex;align-items:flex-start;gap:10px}
+.task-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.task-icon i{font-size:11px}
+.task-body{flex:1}
+.task-title{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.task-desc{font-size:12px;color:var(--color-text-secondary);margin-top:2px;line-height:1.5}
+.task.done .task-title{color:var(--color-text-secondary);text-decoration:line-through}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.metric{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px 14px}
+.metric .val{font-size:20px;font-weight:500;color:var(--color-text-primary)}
+.metric .lbl{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.metric .sub{font-size:11px;margin-top:2px}
+.dm-box{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:14px 16px;border-left:3px solid #1D9E75;margin-top:4px}
+.dm-label{font-size:10px;font-weight:500;color:#1D9E75;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.dm-text{font-size:13px;color:var(--color-text-primary);line-height:1.6;font-style:italic}
+</style>
+
+<h2 class="sr-only">AutoReply Pro CEO roadmap — 5-phase plan from launch to €3-5M exit covering tech, marketing, and revenue milestones</h2>
+
+<div class="roadmap">
+
+<div class="header">
+  <h1>AutoReply Pro — CEO roadmap</h1>
+  <p>From €5 in your pocket to €98k/month in 5 months. Every step, in order.</p>
+</div>
+
+<div class="metrics">
+  <div class="metric"><div class="val">€0</div><div class="lbl">Starting budget</div><div class="sub" style="color:#1D9E75;font-size:11px">Hustle is free</div></div>
+  <div class="metric"><div class="val">€49</div><div class="lbl">Price per customer</div><div class="sub" style="color:#1D9E75;font-size:11px">per month</div></div>
+  <div class="metric"><div class="val">€98k</div><div class="lbl">Target MRR</div><div class="sub" style="color:var(--color-text-secondary);font-size:11px">month 5</div></div>
+  <div class="metric"><div class="val">€3–5M</div><div class="lbl">Exit potential</div><div class="sub" style="color:var(--color-text-secondary);font-size:11px">3–5× ARR</div></div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-num" style="background:#E1F5EE;color:#0F6E56">1</div>
+    <div class="phase-meta">
+      <div class="phase-title">This week — get live</div>
+      <div class="phase-sub">Get the public URL working and start collecting first users</div>
+    </div>
+    <div class="phase-badge" style="background:#E1F5EE;color:#0F6E56">In progress</div>
+  </div>
+  <div class="tasks">
+    <div class="task done"><div class="task-icon" style="background:#E1F5EE"><i class="ti ti-check" style="color:#0F6E56" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">App built and deployed on Railway</div></div></div>
+    <div class="task done"><div class="task-icon" style="background:#E1F5EE"><i class="ti ti-check" style="color:#0F6E56" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Stripe payment links connected (€49/mo Pro, €149/mo Agency)</div></div></div>
+    <div class="task done"><div class="task-icon" style="background:#E1F5EE"><i class="ti ti-check" style="color:#0F6E56" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">AI agent working with real Anthropic API</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#FAEEDA"><i class="ti ti-clock" style="color:#854F0B" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">autoreply.pro public URL live</div><div class="task-desc">Waiting for DNS propagation on Railway</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#FAEEDA"><i class="ti ti-clock" style="color:#854F0B" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Play Store APK via PWABuilder</div><div class="task-desc">Go to pwabuilder.com → paste your URL → download Android APK → submit to Play Store</div></div></div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-num" style="background:#E6F1FB;color:#0C447C">2</div>
+    <div class="phase-meta">
+      <div class="phase-title">Week 1–2 — first customers (€0 budget)</div>
+      <div class="phase-sub">Target: 10 paying customers = €490/mo</div>
+    </div>
+    <div class="phase-badge" style="background:#E6F1FB;color:#0C447C">Up next</div>
+  </div>
+  <div class="tasks">
+    <div class="task"><div class="task-icon" style="background:#E6F1FB"><i class="ti ti-message" style="color:#0C447C" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Send 50 cold DMs per day on Instagram</div><div class="task-desc">Target: salons, cafés, restaurants, gyms in your city. Search "[city] salon" on Instagram and DM them.</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#E6F1FB"><i class="ti ti-brand-tiktok" style="color:#0C447C" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Post 1 demo video on TikTok</div><div class="task-desc">Screen record the app working. Caption: "I built an AI that replies to your customers 24/7 — link in bio"</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#E6F1FB"><i class="ti ti-brand-reddit" style="color:#0C447C" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Post in r/entrepreneur and r/SaaS</div><div class="task-desc">"I built AutoReply Pro in 2 weeks — here's what I learned" — share your story, link in comments</div></div></div>
+    <div class="dm-box">
+      <div class="dm-label">Cold DM template — copy and send</div>
+      <div class="dm-text">"Hey [Name]! Love your [café/salon]. Quick question — are you replying to all your DMs manually? I built an AI that handles customer messages 24/7, books appointments, and never misses a sale. First month totally free. Want me to set it up for you?"</div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-num" style="background:#EEEDFE;color:#3C3489">3</div>
+    <div class="phase-meta">
+      <div class="phase-title">Week 2–3 — real database (Supabase)</div>
+      <div class="phase-sub">So data never resets — accounts and conversations saved permanently</div>
+    </div>
+    <div class="phase-badge" style="background:#EEEDFE;color:#3C3489">Build</div>
+  </div>
+  <div class="tasks">
+    <div class="task"><div class="task-icon" style="background:#EEEDFE"><i class="ti ti-database" style="color:#534AB7" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Set up Supabase (free tier)</div><div class="task-desc">supabase.com → create project → connect to your app. Stores users, conversations, settings.</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#EEEDFE"><i class="ti ti-lock" style="color:#534AB7" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Real auth with Supabase Auth</div><div class="task-desc">Proper login/signup so multiple businesses have separate accounts securely</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#EEEDFE"><i class="ti ti-credit-card" style="color:#534AB7" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Wire Stripe webhooks</div><div class="task-desc">When someone pays, their account auto-upgrades. No manual work needed.</div></div></div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-num" style="background:#FAEEDA;color:#633806">4</div>
+    <div class="phase-meta">
+      <div class="phase-title">Week 3–4 — scale to 300 customers</div>
+      <div class="phase-sub">Target: 300 paying = €14,700/mo</div>
+    </div>
+    <div class="phase-badge" style="background:#FAEEDA;color:#633806">Scale</div>
+  </div>
+  <div class="tasks">
+    <div class="task"><div class="task-icon" style="background:#FAEEDA"><i class="ti ti-users" style="color:#854F0B" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Launch affiliate program</div><div class="task-desc">Give agency owners and VAs 10% recurring commission. They bring customers, you pay from revenue.</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#FAEEDA"><i class="ti ti-speakerphone" style="color:#854F0B" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Product Hunt launch</div><div class="task-desc">Post on a Tuesday. Brief 5 friends to upvote early. Target top 5 of the day = 500+ signups.</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#FAEEDA"><i class="ti ti-ad" style="color:#854F0B" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">First paid TikTok ad (€49 budget)</div><div class="task-desc">Use your first customer payment to run ads. Target "small business owner" interest.</div></div></div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-num" style="background:#EAF3DE;color:#27500A">5</div>
+    <div class="phase-meta">
+      <div class="phase-title">Month 5 — exit or raise</div>
+      <div class="phase-sub">€98k MRR = €1.17M ARR = €3–5M acquisition value</div>
+    </div>
+    <div class="phase-badge" style="background:#EAF3DE;color:#27500A">Endgame</div>
+  </div>
+  <div class="tasks">
+    <div class="task"><div class="task-icon" style="background:#EAF3DE"><i class="ti ti-building-bank" style="color:#3B6D11" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Option A — raise pre-seed</div><div class="task-desc">€98k MRR with growth = fundable. Raise €300–500k at €3M cap to hire and expand to other countries.</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#EAF3DE"><i class="ti ti-coin" style="color:#3B6D11" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Option B — sell the company</div><div class="task-desc">SaaS companies sell at 3–5× ARR. €1.17M ARR = €3.5–5.8M acquisition. List on Acquire.com.</div></div></div>
+    <div class="task"><div class="task-icon" style="background:#EAF3DE"><i class="ti ti-brand-instagram" style="color:#3B6D11" aria-hidden="true"></i></div><div class="task-body"><div class="task-title">Option C — add Instagram/WhatsApp (real webhooks)</div><div class="task-desc">By now Meta verification is done. Add real channel integrations and 10× your value proposition.</div></div></div>
+  </div>
+</div>
+
+</div>
