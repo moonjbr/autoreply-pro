@@ -7,11 +7,11 @@ const fs = require('fs');
 const path = require('path');
 
 // ─── PASTE YOUR ANTHROPIC API KEY HERE ───────────────────────
-const ANTHROPIC_API_KEY = 'const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || ''; 
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || '';  
 // Get your key at: https://console.anthropic.com/settings/keys 
 // ─────────────────────────────────────────────────────────────
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const server = http.createServer(async (req, res) => {
 
