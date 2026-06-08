@@ -6,12 +6,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// ─── PASTE YOUR ANTHROPIC API KEY HERE ───────────────────────
-const ANTHROPIC_API_KEY = 'sk-ant-YOUR_KEY_HERE';
-// Get your key at: https://console.anthropic.com/settings/keys
-// ─────────────────────────────────────────────────────────────
-
-const PORT = 3000;
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || '';
+const PORT = process.env.PORT || 3000;
 
 const server = http.createServer(async (req, res) => {
 
@@ -44,13 +40,6 @@ const server = http.createServer(async (req, res) => {
     req.on('end', async () => {
       try {
         const payload = JSON.parse(body);
-
-        // Validate key is set
-        if (ANTHROPIC_API_KEY === 'sk-ant-YOUR_KEY_HERE') {
-          res.writeHead(400, { 'Content-Type': 'application/json' });
-          res.end(JSON.stringify({ error: 'API key not set. Open server.js and paste your Anthropic key.' }));
-          return;
-        }
 
         // Forward to Anthropic
         const https = require('https');
